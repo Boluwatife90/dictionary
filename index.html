@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dictionary</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+        <main>
+            <h2>Dictionary</h2>
+            <input id="input" type="text" placeholder="Search">
+            
+            <div class="Last-two">
+                <button id="submitButton">Search</button>
+                <button id="clearAll">Clear All</button>
+            </div>
+
+           
+        </main>
+
+        <div>
+
+            <h2 id="meaning1"> Word :</h2>
+            <p id="word"></p>
+
+            <h2 id="meaning1"> Definition : </h2>
+            <p id="Definition"> </p>
+        
+
+            <h2 id="meaning1">Phonetic :</h2>
+            <p id="Example"> </p>
+
+
+            <h2 id="meaning1"> Pronounciation :</h2>
+            <audio  controls id="voice">
+                <source src="" type="audio/wav">
+            </audio>
+        </div>
+
+        <div id="wrappper" class="hide">
+            <ul>
+                <li style="--color:green; animation-delay: -1.32s;"></li>
+                <li style="--color:gray; animation-delay: -1.2s;"></li>
+                <li style="--color:yellow; animation-delay: -1s;"></li>
+                <li style="--color:purple; animation-delay: -0.8s;"></li>
+                <li style="--color:orange; animation-delay: -0.6s;"></li>
+                <li style="--color:skyblue; animation-delay: -0.4s;"></li>
+            </ul>
+        </div>
+    
+        <script src="./index.js"></script>
+</body>
+</html>

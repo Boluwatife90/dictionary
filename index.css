@@ -1,0 +1,205 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+text-align: center;
+
+background-color: skyblue;
+
+
+}
+#note{
+    margin-top: 5px;
+    font-size: 20px;
+}
+audio{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#Example{
+    font-size: 24px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+#Definition{
+font-size: 24px;
+margin-left: 30px;
+margin-bottom: 20px;
+margin-top: 10px;
+} 
+#word{
+    font-size: 24px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+#meaningDe{
+   font-weight: 300;
+    font-size: 30px;
+}
+#meaning2{
+    
+    font-size: 20px;
+}
+#meaning1{
+
+    font-size: 20px;
+  
+    margin-left: 30px;
+}
+#phonetic{
+   
+    font-size: 20px;
+    margin-top: 10px;
+}
+input{
+    width: 40%;
+    padding: 10px 10px;
+    border: 2px solid skyblue;
+    border-radius: 20px;
+    outline: none;
+    margin: 10px;
+    font-size: 20px;
+    
+}
+
+input:focus{
+    box-shadow: 2px 0 7px  black;
+    
+}
+h2{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    padding-top: 30px;
+}
+
+button{
+    color: skyblue;
+    background-color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 15px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.541);
+}
+button:last-of-type{
+    color: skyblue;
+    background-color: white;
+    outline: none;
+}
+
+
+.Last-two{
+    padding: 20px;
+}
+button:last-of-type:hover{
+    background-color: rgba(255, 255, 255, 0.541);
+}
+
+
+
+
+#wrappper{
+    background-color: black;
+
+}
+
+
+@keyframes movingcolor  {
+
+0%{
+color: white;
+}
+
+100%{
+    color: yellow;
+    transition: 1s;
+}
+
+}
+
+.hide{
+    display:none;
+}
+.show{
+    display: block;
+}
+
+
+ul{
+    position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+ 
+}
+li{
+    width: 40px;
+    height: 40px;
+    background-color: var(--color);
+    border-radius: 50%;
+    box-shadow: 0 0 50px var(--color);
+    animation-name: ani;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes ani {
+    0%,
+    40%,
+    100%{
+        transform: scale(0.2);
+    }
+    20%{
+        transform: scale(1);
+    }
+} 
+
+
+@media screen and (max-width:740px){
+    main{
+        text-align: center;
+        }  
+
+        input{
+            width: 90%;
+            padding: 10px 10px;
+            border: 2px solid skyblue;
+            border-radius: 20px;
+            outline: none;
+            margin:0;
+            font-size: 20px;
+            
+        }
+
+        #meaning1{
+           margin-top: 100px;
+        }
+
+        #loading_wrapper{
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.63);
+            color: white;
+            height: 30vh;
+            width: 30vh;
+ 
+        
+        
+        
+        }
+        
+       
+}
